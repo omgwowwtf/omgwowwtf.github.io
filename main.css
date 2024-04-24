@@ -1,0 +1,163 @@
+@font-face {
+	font-family: 'MetricWeb-Bold';
+	src: url(./MetricWeb-Bold.ttf) format("truetype");
+}
+
+/**** MAIN STYLES ****/
+body {
+	background-color: #e7e9ed;
+	font-family: 'MetricWeb-Bold';
+	text-rendering: geometricPrecision;
+	font-size: 2.2em;
+	color: #454d5d;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	user-select: none;
+	cursor: default;
+}
+
+p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header {
+	float: right;
+	position: relative;
+	top: 30px;
+	right: 14px;
+	pointer-events: none;
+}
+
+.container {
+	width: 820px;
+	margin: 0 auto;
+	margin-top: 1.2em;
+}
+
+footer > a {
+	margin-right: .4em;
+}
+
+.link {
+	text-decoration: none;
+	border-bottom: .25rem solid;
+}
+
+.past {
+	text-decoration: none;
+	position: relative;
+}
+
+.past::after {
+	border-bottom: 0.25rem solid;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 51%;
+}
+
+/**** HIGHLIGHT COLORS ****/
+.uphold {
+	color: #49cc68;
+}
+
+.raise {
+	color: #4ed1aa;
+}
+
+.linkedIn {
+	color: #0077b5;
+}
+
+.resume {
+	color: #6473d6;
+}
+
+.dbc {
+	color: #19abb5;
+}
+
+.oss {
+	color: #ee3724;
+}
+
+.github {
+	color: #3d454d;
+}
+
+/**** 404 STYLES ****/
+.heading {
+	font-size: 3em;
+}
+
+.shrug {
+	position: relative;
+  top: 2px;
+}
+
+/**** MOBLIE ****/
+@media (max-width: 680px) {
+	.content {
+		display: none;
+	}
+
+	.container {
+		width: auto;
+		display: flex;
+		justify-content: center;
+		margin-top: 5em;
+	}
+
+	header {
+		position: unset;
+	}
+
+	footer {
+		margin-left: 16px;
+		margin-top: 28px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	footer > a {
+		margin-bottom: 14px;
+	}
+
+	.github {
+		width: 102px;
+	}
+	.linkedIn {
+		width: 125px;
+	}
+	.resume {
+		width: 114px;
+	}
+
+	/* 404 page */
+	.container-404 {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.content-404 {
+		text-align: center;
+		margin-bottom: 14px;
+	}
+
+	.heading {
+		font-size: unset;
+	}
+
+	.info-wrap {
+		position: relative;
+		top: -16px;
+	}
+
+	.info-quirk {
+		display: none;
+	}
+}
